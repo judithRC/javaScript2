@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: #DADDE0;
+}
+
+/*fuente principal*/
+@font-face {
+    font-family:"Thinoo";
+    src: url("/fuentes/thinoobold.otf") format("opentype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family:"Thinoo";
+    src: url("/fuentes/thinoothin.otf") format("opentype");
+    font-weight: thin;
+}
+
+/*fuente secundaria*/
+@font-face {
+    font-family:"Maxwell";
+    src: url("/fuentes/MAXWELLBOLD.ttf") format("truetype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family:"Maxwell";
+    src: url("/fuentes/MAXWELL_LIGHT.ttf") format("truetype");
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family:"Maxwell";
+    src: url("/fuentes/MAXWELLREGULAR.ttf") format("truetype");
+    font-weight: normal;
+}
+
+/*reloj*/
+
+#reloj { 
+    width: 150px; 
+    height: 50px; 
+    padding: 10px;
+    border: 1px solid black; 
+    font: bold 1.9em dotum, "Maxwell";
+    text-align: center;
+    float: left; 
+    margin: 1em 3em 1em 1em;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
+    background-color: rgba(217, 142, 4, 0.5);
+    border: transparent;
+ }
+    
+
+
+
+/*formulario*/
+
+.formulario{
+    width: 500px;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
+    position: relative;
+    background-color: #048ABF;
+    font-family: "Maxwell";
+    
+}
+
+
+.titulo{
+    text-align: center;
+    margin-top: 0;
+    color: black;
+    font-weight: bold;
+}
+
+.input, .label, .submit{
+    display: block;
+    width: 100%;  
+    font-size: 1.2em;
+}
+
+.input{
+    padding: 20px;
+    background: rgba(218, 221, 224, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    margin-bottom: 40px;
+    
+}
+
+.input:focus{
+    outline: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+.input:focus + .label{
+    margin-top: -135px;
+
+}
+
+.label{
+    padding-left: 15px;
+    position:absolute;
+    margin-top: -85px;    
+    color: rgba(0, 0, 0, 0.5);
+    transition: all 0.2s;
+    
+}
+
+.submit{
+    background: #045b7e;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
+}
+
+.fijar{
+    margin-top: -135px;
+}
